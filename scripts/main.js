@@ -52,6 +52,9 @@ fetch('https://raw.githubusercontent.com/prust/wikipedia-movie-data/master/movie
 
         movieOfMovies.textContent = `of ${movies.length}`;
 
+        inputMovieNumber.setAttribute('aria-label', `Curent movie selected`);
+        movieOfMovies.setAttribute('aria-label', `Total movies ${movies.length}`);
+
         inputMovieNumber.min = 1;
         inputMovieNumber.max = movies.length;
 
