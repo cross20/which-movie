@@ -51,8 +51,6 @@ fetch('https://raw.githubusercontent.com/prust/wikipedia-movie-data/master/movie
         submitMovieNumber.disabled = false;
 
         movieOfMovies.textContent = `of ${movies.length}`;
-
-        inputMovieNumber.setAttribute('aria-label', `Curent movie selected`);
         movieOfMovies.setAttribute('aria-label', `Total movies ${movies.length}`);
 
         inputMovieNumber.min = 1;
@@ -94,5 +92,7 @@ function updateMovieDetails() {
     });
 
     inputMovieNumber.value = currentMovie + 1;
+    inputMovieNumber.setAttribute('aria-label', `Curent movie selected is ${currentMovie + 1}`);
+
     console.log(`Showing movie ${currentMovie} of ${movies.length - 1}`);
 }
