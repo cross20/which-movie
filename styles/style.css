@@ -1,0 +1,8 @@
+form {
+    display: inline;
+}
+
+form p {
+    display: inline;
+    margin-right: 1px;
+}

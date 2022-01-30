@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <title>Which Movie?</title>
+        <link rel='stylesheet' href='styles/style.css'>
+    </head>
+    <body>
+        <button id='prev' disabled>Previous</button>
+        <button id='next' disabled>Next</button>
+
+        <form>
+            <input type='number' required min=0 max=0 disabled></input>
+            <p>of 0</p>
+            <input type='submit' disabled></input>
+        </form>
+
+        <p id='loading'>Loading...</p>
+        
+        <div class='movie'>
+            <h2></h2>
+            <p></p>
+            <h3></h3>
+            <ul></ul>
+        </div>
+        
+        <script src='scripts/main.js'></script>
+    </body>
+</html>
